@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Where in the World?</title>
+</head>
+<body data-body class="body">
+    <header data-header>
+        <nav data-navbar class="flex-row">
+            <h1 data-title>Where in the world?</h1>
+            <p><ion-icon name="moon"></ion-icon><span class="mode" data-mode>Dark mode</span></p>
+        </nav>
+    </header>
+
+    <main>
+        <!--SECTION 1-->
+        <section data-section-1 class=" search-section flex-row">
+            <input data-search class="search" type="search" placeholder="Search for a country...">
+            <div data-filter-div class="filter-section">
+                <button data-filter-regions class="filter-regions">Filter by Region</button>
+                <ul data-filter-buttons-list class="inactive filter-list">
+                    <li><button data-filter-button class="filter-btn" value="africa">Africa</button></li>
+                    <li><button data-filter-button class="filter-btn" value="americas">America</button></li>
+                    <li><button data-filter-button class="filter-btn" value="asia">Asia</button></li>
+                    <li><button data-filter-button class="filter-btn" value="europe">Europe</button></li>
+                    <li><button data-filter-button class="filter-btn" value="oceania">Oceania</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--SECTION 2-->
+        
+        <section data-section-2 class=" country-section grid">
+            <template data-country-card-template>
+                <div data-country-card-container class="country-container">
+                    <div data-country-card-image-div class="image-section">
+                        <img data-country-card-image class="country-image" src="" alt="Country flag">
+                    </div>
+                    <div data-country-info-div class="country-info flex-column">
+                        <h3 data-country-info-name class="country-name"></h3>
+                        <span data-country-info-population class="country-population"><b>Population:</b> </span>
+                        <span data-country-info-region class="country-region"><b>Region:</b> </span>
+                        <span data-country-info-capital class="country-capital"><b>Capital:</b> </span>
+                    </div>
+                </div>
+            </template>
+        </section>
+        
+
+        <!--SECTION 3-->
+        <section data-section-3 class="inactive country-page-section ">
+
+            <div data-go-back-div class="go-back">
+                <button data-go-back-button class="back-btn">Back</button>
+            </div>
+
+            <div data-country-page>
+                <template data-country-page-template>
+                <div data-country-page-div class="country-page">
+                    <div data-country-page-image-div class="country-page-img-section">
+                        <img data-country-page-image class="country-page-img" src="#" alt="country flag">
+                    </div>
+
+                    <div data-country-page-information-div class="country-page-information flex-column">
+                        <div data-country-page-name-div>
+                            <h1 data-country-page-name class="country-page-name"></h1>
+                        </div>
+                        <div data-country-page-lists-div class="country-page-lists flex-row">
+                            <div data-country-page-list-1-div>
+                                <ul data-country-page-list-1 class="country-page-list-1">
+                                    <li data-country-page-native-name><b>Native Name:</b> </li>
+                                    <li data-country-page-population><b>Population:</b> </li>
+                                    <li data-country-page-region><b>Region:</b> </li>
+                                    <li data-country-page-subregion><b>Sub Region:</b> </li>
+                                    <li data-country-page-capital><b>Capital:</b> </li>
+                                </ul>
+                            </div>
+                            <div data-country-page-list-2-div>
+                                    <ul data-country-page-list-2 class="country-page-list-1">
+                                        <li data-country-page-tld><b>Top Level Domain:</b> </li>
+                                        <li data-country-page-currencies><b>Currencies:</b> </li>
+                                        <li data-country-page-languages><b>Languages:</b> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-country-page-border-countries-div class="border-countries flex-row">
+                                <p data-country-page-border-countries-p><b>Border Countries:</b></p>
+                                <ul data-country-page-border-countries-list class="border-countries-list flex-row">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</body>
+</html>
